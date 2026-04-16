@@ -1,0 +1,165 @@
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'cursive', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط يقترب من الصور */
+    background: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?q=80&w=2070&auto=format&fit=crop') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* طبقة تغميق الخلفية لزيادة وضوح الكلام */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.container {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* --- Header & Nav --- */
+.site-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d1d5db;
+    margin-bottom: 10px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav a {
+    color: #a5f3fc; /* اللون اللبني من الصور */
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+/* --- Glass Cards (التأثير الزجاجي) --- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+/* --- Hero Texts --- */
+.hero h1 {
+    font-size: 2.2rem;
+    color: #d1e7ff;
+    margin-bottom: 10px;
+}
+
+.hero h1.green {
+    color: #a7f3d0; /* اللون الأخضر الفاتح */
+}
+
+.quote-box {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #e5e7eb;
+    margin: 20px 0;
+}
+
+/* --- Forms & Inputs --- */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #d1d5db;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    font-family: inherit;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #1e293b; /* اللون الكحلي الغامق للزرار */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* --- Course Row Styles (Image 4) --- */
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.course-label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.course-value {
+    font-style: italic;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* --- Social Icons --- */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.social-icons img {
+    width: 24px;
+    filter: invert(1); /* لجعل الأيقونات بيضاء */
+}
